@@ -1,0 +1,36 @@
+body {
+	background: #310dd4;
+}
+
+.content {
+	min-height: 100vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.content a {
+	text-decoration: none;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.content a:hover {
+	color: red;
+}
+
+h2 {
+	margin-top: 10px;
+	width: 1060px;
+	text-indent: 25px;
+}
+
+.content li {
+	text-indent: 50px;
+	list-style: none;
+}
+
+.content li::before {
+	content: "✓";
+	margin-right: 15px;
+}

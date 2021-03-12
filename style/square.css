@@ -1,0 +1,92 @@
+.content {
+	min-height: 80vh;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.box-img {
+	font-family: "Cuprum", Arial, Helvetica, sans-serif;
+	width: 500px;
+	height: 300px;
+	border: 5px solid #b7bab7;
+	overflow: hidden;
+}
+
+.box-img img {
+	height: 300px;
+}
+
+.dws-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text {
+	position: absolute;
+	top: 20%;
+	color: #ffffff;
+	text-align: center;
+}
+
+a.bt {
+	position: absolute;
+	left: 37%;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+	background: #22b80e;
+}
+
+a.bt:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: -75px;
+	height: 50px;
+	width: 50px;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.5)
+	);
+	transform: skewX(-45deg);
+}
+
+a.bt:hover:before {
+	left: 150px;
+	transition: 0.5s ease-in-out;
+}
+
+a.bt {
+	overflow: hidden;
+}
+
+a.bt:active {
+	border: 2px solid #b3b3b3;
+}
+
+.box-img img {
+	transition: 0.5s;
+}
+
+.box-img {
+	position: relative;
+}
+
+.text {
+	z-index: 1;
+}
+
+.box-img:hover a.bt {
+	opacity: 1;
+	transition: 0.5s;
+}

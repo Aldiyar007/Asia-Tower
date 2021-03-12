@@ -1,0 +1,115 @@
+a {
+	text-decoration: none;
+}
+
+.content {
+	min-height: 80vh;
+}
+
+.connection {
+	margin-left: 40px;
+	width: 300px;
+}
+
+.connection__title {
+	padding-bottom: 5px;
+	color: #ec1a1a;
+}
+
+.connection__desc p {
+	color: #000;
+	padding-bottom: 5px;
+}
+
+.map {
+	margin-left: 600px;
+	position: relative;
+	display: flex;
+	bottom: 340px;
+}
+
+.social-connection {
+	margin-left: 50px;
+}
+
+.email {
+	color: #000;
+	position: relative;
+	left: 60px;
+}
+
+.phone-1 {
+	color: #fff;
+	position: relative;
+	right: 280px;
+	padding-right: 80px;
+	float: right;
+}
+
+.connection__desc-social {
+	display: inline-flex;
+	position: relative;
+	right: 2px;
+	left: 8px;
+}
+
+.footer-bottom h2 {
+	margin-top: 15px;
+}
+
+.whatsapp {
+	padding-right: 15px;
+}
+
+@media (max-width: 1600px) and (min-width: 1367px) {
+	.content {
+		padding: 80px 0px 45px 0px;
+	}
+
+	.social-connection {
+		margin-left: 300px;
+	}
+}
+
+@media (min-device-width: 868px) and (max-device-width: 1366px) {
+	.content {
+		padding: 80px 0px 45px 0px;
+	}
+
+	.footer-bottom {
+		height: auto;
+		display: block;
+	}
+
+	.social-connection {
+		margin-left: 400px;
+		position: relative;
+		bottom: 150px;
+		padding: 0;
+	}
+}
+
+@media (max-device-width: 867px) and (min-device-width: 280px) {
+	.content {
+		padding: 80px 0px 45px 0px;
+	}
+
+	.footer-bottom {
+		height: auto;
+		display: block;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+
+	.social-connection {
+		display: block;
+		position: relative;
+		right: 530px;
+	}
+}
+
+@media (max-width: 387px) {
+	.footer-bottom {
+		padding-bottom: 45px;
+	}
+}

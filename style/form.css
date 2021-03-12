@@ -1,0 +1,136 @@
+.dws-container {
+	position: fixed;
+	bottom: 0;
+	right: 0%;
+	z-index: 999;
+	transform: translateY(517px);
+	width: 350px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.dws-container:hover {
+	transform: translateY(510px);
+}
+.toggle-form:checked ~ .dws-container {
+	transform: translateY(0);
+}
+.toggle-form {
+	display: block;
+	background: #8a36a5;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 10px 0;
+	border-radius: 8px 8px 0 0;
+	width: 85%;
+}
+.form-box {
+	padding: 30px;
+	background: #fff;
+	border: 4px solid #8a36a5;
+}
+.input-box {
+	position: relative;
+	margin: 0 0 20px;
+	background: #fff;
+}
+.label-text {
+	position: absolute;
+	line-height: 55px;
+	font-size: 15px;
+	color: #a5a5a5;
+	transition: 0.5s;
+}
+.focus .label-text {
+	transform: translateY(-30px);
+	font-size: 14px;
+	color: #d33ebc;
+}
+.user-input {
+	position: relative;
+	background: transparent;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: #575454;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #a5a5a5;
+}
+.button {
+	background: #8a36a5;
+	color: #fff;
+	width: 45%;
+	height: 35px;
+	font-size: 18px;
+	border: none;
+	margin-top: 10px;
+	margin-left: 50%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.button:hover {
+	background: #b33edc;
+}
+
+.toggle-form i {
+	position: absolute;
+	top: 7px;
+	left: 40px;
+	font-size: 40px;
+}
+
+.toggle-form[type="checkbox"] {
+	display: none;
+}
+
+textarea.user-input {
+	height: 100px;
+	margin-top: 12px;
+}
+
+.personal-doc,
+.personal-doc a {
+	color: #858585;
+}
+
+.personal-doc a:hover {
+	text-decoration: none;
+	color: #b33edc;
+}
+
+@media (max-width: 585px) {
+	.toggle-form {
+		font-size: 15px;
+	}
+
+	.toggle-form i {
+		position: absolute;
+		top: 7px;
+		left: 40px;
+		font-size: 26px;
+	}
+
+	.dws-container {
+		width: 250px;
+		transform: translateY(490px);
+	}
+
+	.toggle-form:checked ~ .dws-container {
+		transform: translateY(0);
+	}
+
+	.button {
+		margin-left: 20%;
+		width: 100px;
+		position: absolute;
+		bottom: 10px;
+		left: 25px;
+	}
+
+	.form-box {
+		height: 490px;
+	}
+}

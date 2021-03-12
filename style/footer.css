@@ -1,0 +1,17 @@
+footer {
+	display: flex;
+	background-color: #675fed;
+	height: 130px;
+	padding-top: 15px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+	transition: 0.9s;
+	margin-left: 45px;
+}
+
+footer a:hover {
+	color: red;
+}

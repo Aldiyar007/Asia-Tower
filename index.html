@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="description" content="бизнес центр Asia Tower" />
+		<meta name="keywords" content="бизнес центр, Asia Tower" />
+		<meta
+			name="Address"
+			content="г. Алматы, пр. Аль-Фараби, дом 17/1, ПФЦ «Нурлы-Тау» блок 5Б, 10 этаж, офис №16"
+		/>
+		<title>Asia Tower | Главная</title>
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/header.css" />
+		<link rel="stylesheet" href="style/back-to-top.css" />
+		<link rel="stylesheet" href="style/footer.css" />
+		<link rel="stylesheet" href="style/form.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<div class="page">
+			<span id="header-first"></span>
+			<header class="header anim-items">
+				<div class="container">
+					<div class="header__body">
+						<a href="#header-first" id="smooth-scrolling" class="header__logo">
+							<h1>Asia Tower</h1>
+						</a>
+						<a href="search.html" class="header__search">
+							<img src="img/icons/search.svg" alt="Search" />
+						</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="" class="header__link active-page">Главная</a>
+								</li>
+								<li>
+									<a href="square.html" class="header__link">Площади</a>
+								</li>
+								<li>
+									<a href="#slider" id="tenants" class="header__link"
+										>Арендаторы</a
+									>
+								</li>
+								<li>
+									<a href="contact.html" class="header__link">Контакты</a>
+								</li>
+								<li>
+									<a href="about.html" class="header__link">О нас</a>
+								</li>
+								<li>
+									<a href="search.html" class="header__link search"
+										><img
+											src="img/icons/search.svg"
+											alt="поиск информации"
+											style="width: 30px"
+									/></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<div class="content content-index">
+				<div class="container">
+					<div class="title">
+						<h1>
+							Самый престижный офис <br />
+							в центре Алматы
+						</h1>
+					</div>
+					<div class="description" id="description">
+						<h2>
+							Бизнес центр ПФЦ "Нурлы Тау" Блок 5 Б "Asia Tower" - лучший бизнес
+							центр Алматы. "Asia Tower" сочетает в себе современный дизайн с
+							самыми высокими стандартами качества, надежности и безопасности.
+						</h2>
+					</div>
+					<div class="info">
+						<div class="info-block">
+							<a href="about.html" class="info-block__title">О бизнес центре</a>
+							<div class="info-block__img">
+								<a href="about.html"
+									><img src="img/info1.jpeg" alt="о нас"
+								/></a>
+							</div>
+						</div>
+						<div class="info-block info-block-right" id="slider">
+							<a href="#" class="info-block__title">Свободные офисы</a>
+							<div class="info-block__img">
+								<a href="#"
+									><img src="img/info2.jpeg" alt="свободные офисы"
+								/></a>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="slider__title">Арендаторы:</h2>
+					<div class="slider">
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+						<div class="slider__item">
+							<img src="img/header.jpg" alt="" />
+						</div>
+					</div>
+
+					<div class="slider-arrows"></div>
+
+					<wrapper>
+						<div class="dws-wrapper">
+							<input
+								type="checkbox"
+								name="toggle"
+								id="dws-form"
+								class="toggle-form"
+							/>
+							<div class="dws-container">
+								<label for="dws-form" class="toggle-form"
+									><i class="fa fa-question-circle"></i>Задать вопрос</label
+								>
+								<form class="form-box">
+									<div class="input-box">
+										<label class="label-text">Ваше имя:</label>
+										<input
+											class="user-input"
+											type="text"
+											name="name"
+											required
+										/>
+									</div>
+									<div class="input-box">
+										<label class="label-text">E-mail:</label>
+										<input
+											class="user-input"
+											type="email"
+											name="email"
+											required
+										/>
+									</div>
+									<div class="input-box">
+										<label class="label-text">Номер телефона:</label>
+										<input
+											class="user-input"
+											type="phone"
+											name="phone"
+											required
+											pattern="\d+"
+										/>
+									</div>
+									<div class="input-box">
+										<label class="label-text">Сообщение:</label>
+										<textarea
+											class="user-input"
+											type="message"
+											name="message"
+											required
+										></textarea>
+									</div>
+									<div class="input-box">
+										<input type="checkbox" required />
+										<label class="personal-doc"
+											>Я согласен на обработку моих
+											<a href="#">персональных данных</a></label
+										>
+									</div>
+									<input type="submit" value="Отправить" class="button" />
+								</form>
+							</div>
+						</div>
+					</wrapper>
+					<a href="#" class="back-to-top"></a>
+				</div>
+			</div>
+
+			<footer>
+				<nav class="footer">
+					<ul class="footer__list">
+						<li>
+							<a href="" class="footer__link">Главная</a>
+						</li>
+						<li>
+							<a href="square.html" class="footer__link">Площади</a>
+						</li>
+						<li>
+							<a href="#slider" id="tenants" class="footer__link">Арендаторы</a>
+						</li>
+						<li>
+							<a href="contact.html" class="footer__link">Контакты</a>
+						</li>
+						<li>
+							<a href="about.html" class="footer__link">О нас</a>
+						</li>
+					</ul>
+				</nav>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/mail.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/burger.js"></script>
+		<script src="js/scroll-on-page.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/smooth-scrolling.js"></script>
+	</body>
+</html>
