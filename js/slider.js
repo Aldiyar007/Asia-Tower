@@ -13,16 +13,16 @@ $(document).ready(function() {
         waitForAnumate: true,
         centerMode: false,
         easing: 'ease',
-        responsive:[{
-            breakpoint: 1145,
-            settings: {
-                slidesToShow: 2,
-                appendArrows: $('.slider-arrows')
-            }
-        }], 
-        responsive: [{
-            breakpoint: 699,
-            settings: {
+            responsive: [
+                {
+                    breakpoint: 1160,
+                    settings: {
+                        slidesToShow: 2,
+                        appendArrows: $('.slider-arrows')
+                }
+            },{
+                breakpoint: 699,
+                settings: {
                 slidesToShow: 1,
                 appendArrows: $('.slider-arrows')
             }

@@ -1,17 +1,25 @@
 footer {
-	display: flex;
-	background-color: #675fed;
-	height: 130px;
-	padding-top: 15px;
+  display: flex;
+  background-color: #675fed;
+  height: 130px;
+  padding-top: 15px;
 }
 
 footer a {
-	text-decoration: none;
-	color: #fff;
-	transition: 0.9s;
-	margin-left: 45px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.9s;
+  margin-left: 45px;
 }
 
 footer a:hover {
-	color: red;
+  color: red;
+}
+
+footer a::before {
+  content: "";
+  width: 5px;
+  height: 10px;
+  background: red;
+  z-index: 10;
 }
