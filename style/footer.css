@@ -9,9 +9,8 @@ footer li a {
   text-decoration: none;
   color: #fff;
   transition: 0.9s;
-  margin-left: 300px;
+  margin-left: 315px;
   position: relative;
-  left: 15px;
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -32,7 +31,6 @@ li a.footer__link::before {
   content: "";
   width: 4px;
   height: 10px;
-  border-radius: 1px;
   background: #b2242b;
   position: absolute;
   left: -10px;
@@ -57,4 +55,130 @@ li a.footer__link::before {
 
 a.rules-info:hover {
   color: red;
+}
+
+@media (max-width: 1378px) and (min-width: 1133px) {
+  footer li a {
+    margin-left: 200px;
+    position: relative;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1132px) and (min-width: 957px) {
+  footer li a {
+    margin-left: 100px;
+    position: relative;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 150%;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 956px) and (min-width: 830px) {
+  footer li a {
+    margin-left: 15px;
+    position: relative;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 100%;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 829px) and (min-width: 778px) {
+  footer li a {
+    margin-left: 0px;
+    position: relative;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 80%;
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 777px) and (min-width: 640px) {
+  footer li a {
+    display: none;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 80%;
+    bottom: 50%;
+  }
+}
+
+@media (max-width: 639px) and (min-width: 485px) {
+  footer li a {
+    display: none;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+  }
+}
+
+@media (max-width: 484px) and (min-width: 400px) {
+  footer li a {
+    display: none;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 30%;
+    bottom: 50%;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 335px) {
+  footer li a {
+    display: none;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    bottom: 50%;
+  }
+}
+
+@media (max-width: 334px) and (min-width: 280px) {
+  footer li a {
+    display: none;
+  }
+
+  .rules-info {
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    bottom: 50%;
+  }
 }
