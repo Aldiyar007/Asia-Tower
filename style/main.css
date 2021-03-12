@@ -39,24 +39,20 @@ body {
 }
 
 .title {
-  background: url(../img/desc.jpeg) 0 0 no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
   text-transform: uppercase;
-  width: 2000px;
+  width: 2035px;
   padding: 0;
   margin: 0;
   position: relative;
   right: 500px;
 }
 
-/* .title img {
+.title img {
   display: inline-block;
-  width: 2000px;
-  height: 700px;
-  background-attachment: fixed;
-} */
+  width: 100%;
+  height: 1000px;
+}
 
 .title h1 {
   font-size: 3rem;
@@ -220,12 +216,6 @@ a.info-block__title:focus {
   width: 30px;
   height: 60px;
   padding: 0;
-}
-
-.map {
-  margin-top: 45px;
-  width: 500px;
-  height: 400px;
 }
 
 @media (max-width: 1558px) and (min-width: 1349px) {
@@ -556,7 +546,7 @@ a.info-block__title:focus {
 @media (max-width: 827px) and (min-width: 760px) {
   .title h1 {
     font-size: 40px;
-    top: 235px;
+    top: 500px;
     left: 0px;
     margin-right: 560px;
   }
@@ -612,7 +602,7 @@ a.info-block__title:focus {
 @media (max-width: 759px) and (min-width: 718px) {
   .title h1 {
     font-size: 35px;
-    top: 200px;
+    top: 500px;
     left: 0px;
     margin-right: 620px;
   }
@@ -669,21 +659,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 200px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 717px) and (min-width: 644px) {
   .title h1 {
     font-size: 35px;
-    top: 200px;
+    top: 500px;
     left: 0px;
     margin-right: 690px;
   }
@@ -745,21 +726,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 200px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 643px) and (min-width: 575px) {
   .title h1 {
     font-size: 25px;
-    top: 200px;
+    top: 500px;
     left: 0px;
     margin-right: 760px;
   }
@@ -829,21 +801,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 290px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 574px) and (min-width: 528px) {
   .title h1 {
     font-size: 25px;
-    top: 220px;
+    top: 500px;
     left: 0px;
     margin-right: 820px;
   }
@@ -913,21 +876,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 290px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 527px) and (min-width: 490px) {
   .title h1 {
     font-size: 22px;
-    top: 220px;
+    top: 500px;
     left: 0px;
     margin-right: 900px;
   }
@@ -997,21 +951,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 350px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 489px) and (min-width: 410px) {
   .title h1 {
     font-size: 22px;
-    top: 215px;
+    top: 500px;
     left: 0px;
     margin-right: 950px;
   }
@@ -1082,21 +1027,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 370px;
-    width: 320px;
-    height: 220px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 409px) and (min-width: 354px) {
   .title h1 {
     font-size: 18px;
-    top: 215px;
+    top: 500px;
     left: 0px;
     margin-right: 1000px;
   }
@@ -1167,21 +1103,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 398px;
-    width: 280px;
-    height: 200px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 353px) and (min-width: 328px) {
   .title h1 {
     font-size: 16px;
-    top: 200px;
+    top: 550px;
     left: 0px;
     margin-right: 1050px;
   }
@@ -1252,21 +1179,12 @@ a.info-block__title:focus {
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
   }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 398px;
-    width: 200px;
-    height: 200px;
-    align-items: center;
-  }
 }
 
 @media (max-width: 327px) and (min-width: 280px) {
   .title h1 {
     font-size: 16px;
-    top: 215px;
+    top: 500px;
     left: 0px;
     margin-right: 1089px;
   }
@@ -1336,14 +1254,5 @@ a.info-block__title:focus {
     left: 85px;
     background: url(../img/sl-arrow_r.svg) 0 0 / 100% no-repeat;
     cursor: pointer;
-  }
-
-  .map {
-    margin-top: 150px;
-    position: relative;
-    right: 398px;
-    width: 200px;
-    height: 200px;
-    align-items: center;
   }
 }
