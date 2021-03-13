@@ -2,8 +2,10 @@ a {
 	text-decoration: none;
 }
 
-.content {
-	min-height: 80vh;
+.contact {
+	position: relative;
+	top: 10px;
+	min-height: 20vh;
 }
 
 .connection {
@@ -26,6 +28,9 @@ a {
 	position: relative;
 	display: flex;
 	bottom: 340px;
+	width: 490px;
+	height: 376px;
+	margin-top: 30px;
 }
 
 .social-connection {
@@ -76,11 +81,6 @@ a {
 		padding: 80px 0px 45px 0px;
 	}
 
-	.footer-bottom {
-		height: auto;
-		display: block;
-	}
-
 	.social-connection {
 		margin-left: 400px;
 		position: relative;
@@ -93,14 +93,7 @@ a {
 	.content {
 		padding: 80px 0px 45px 0px;
 	}
-
-	.footer-bottom {
-		height: auto;
-		display: block;
-		padding-bottom: 15px;
-		padding-top: 15px;
-	}
-
+	
 	.social-connection {
 		display: block;
 		position: relative;

@@ -57,7 +57,7 @@ a.rules-info:hover {
   color: red;
 }
 
-@media (max-width: 1378px) and (min-width: 1133px) {
+@media (max-width: 1426px) and (min-width: 1133px) {
   footer li a {
     margin-left: 200px;
     position: relative;

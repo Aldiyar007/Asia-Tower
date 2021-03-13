@@ -25,6 +25,7 @@ body {
   padding: 80px 0 45px 0;
   min-width: 2000px;
   flex: 1 1;
+  min-height: 84.2vh;
 }
 
 .content.content-index {
@@ -42,7 +43,7 @@ body {
   min-height: 100vh;
   text-transform: uppercase;
   width: 2035px;
-  padding: 0;
+  padding: 0%;
   margin: 0;
   position: relative;
   right: 500px;
@@ -489,7 +490,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 901px) and (min-width: 828px) {
+@media (max-width: 901px) and (min-width: 839px) {
   .title h1 {
     left: 0px;
     margin-right: 520px;
@@ -543,7 +544,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 827px) and (min-width: 760px) {
+@media (max-width: 838px) and (min-width: 760px) {
   .title h1 {
     font-size: 40px;
     top: 500px;
@@ -599,12 +600,12 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 759px) and (min-width: 718px) {
+@media (max-width: 759px) and (min-width: 709px) {
   .title h1 {
     font-size: 35px;
     top: 500px;
     left: 0px;
-    margin-right: 620px;
+    margin-right: 670px;
   }
 
   .description h2 {
@@ -661,12 +662,12 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 717px) and (min-width: 644px) {
+@media (max-width: 708px) and (min-width: 675px) {
   .title h1 {
     font-size: 35px;
     top: 500px;
     left: 0px;
-    margin-right: 690px;
+    margin-right: 700px;
   }
 
   .description h2 {
@@ -728,7 +729,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 643px) and (min-width: 575px) {
+@media (max-width: 674px) and (min-width: 596px) {
   .title h1 {
     font-size: 25px;
     top: 500px;
@@ -803,7 +804,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 574px) and (min-width: 528px) {
+@media (max-width: 595px) and (min-width: 550px) {
   .title h1 {
     font-size: 25px;
     top: 500px;
@@ -878,7 +879,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 527px) and (min-width: 490px) {
+@media (max-width: 549px) and (min-width: 490px) {
   .title h1 {
     font-size: 22px;
     top: 500px;
@@ -953,7 +954,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 489px) and (min-width: 410px) {
+@media (max-width: 489px) and (min-width: 444px) {
   .title h1 {
     font-size: 22px;
     top: 500px;
@@ -1029,7 +1030,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 409px) and (min-width: 354px) {
+@media (max-width: 443px) and (min-width: 394px) {
   .title h1 {
     font-size: 18px;
     top: 500px;
@@ -1105,7 +1106,7 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 353px) and (min-width: 328px) {
+@media (max-width: 393px) and (min-width: 339px) {
   .title h1 {
     font-size: 16px;
     top: 550px;
@@ -1181,12 +1182,12 @@ a.info-block__title:focus {
   }
 }
 
-@media (max-width: 327px) and (min-width: 280px) {
+@media (max-width: 338px) and (min-width: 280px) {
   .title h1 {
     font-size: 16px;
     top: 500px;
     left: 0px;
-    margin-right: 1089px;
+    margin-right: 1110px;
   }
 
   .description h2 {
