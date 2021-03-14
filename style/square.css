@@ -13,14 +13,16 @@ a {
 
 .box-img img {
 	height: 300px;
+	width: 500px;
 }
 
 .dws-wrapper {
 	position: relative;
-	margin-top: 25%;
+	top: 160px;
 	display: flex;
 	align-items: center;
-	left: 70%;
+	left: 8%;	
+	padding-top: 20px;
 	transform: translate(-50%, -50%);
 }
 
@@ -33,13 +35,13 @@ a {
 
 a.bt {
 	position: absolute;
-	left: 37%;
-	display: flex;
-	align-items: center;
+	left: 160px;
+	top: 170px;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px 30px;
 	opacity: 0;
+	overflow: hidden;
 	transition: 0.2s ease-in-out;
 	background: #22b80e;
 }
@@ -76,10 +78,6 @@ a.bt:active {
 	transition: 0.5s;
 }
 
-.box-img {
-	position: relative;
-}
-
 .text {
 	z-index: 1;
 }
@@ -87,4 +85,34 @@ a.bt:active {
 .box-img:hover a.bt {
 	opacity: 1;
 	transition: 0.5s;
+}	
+
+@media (max-width: 510px) {
+	.content {
+		height: auto;
+	}
+
+	.dws-wrapper:first-child,
+	.dws-wrapper:last-child {
+		padding: 0;
+	}
+
+	.dws-wrapper:nth-child(2) {
+		margin-top: -40px;
+	}
+	
+	.dws-wrapper {
+		height: 200px;
+		width: 250px;
+		left: -200px;
+		padding-top: 320px;
+	}
+
+	a.bt {
+		opacity: 1;
+	}
+
+	footer {
+		margin-top: 140px;
+	}
 }

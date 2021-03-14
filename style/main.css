@@ -28,7 +28,7 @@ body {
   padding: 80px 0 45px 0;
   min-width: 2000px;
   flex: 1 1;
-  min-height: 84.2vh;
+  /* min-height: 84.2vh; */
 }
 
 .content.content-index {

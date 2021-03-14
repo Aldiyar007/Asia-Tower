@@ -7,8 +7,7 @@
   border-color: transparent;
   border-radius: 50%;
   background-color: #629460;
-  display: none;
-  z-index: 2;
+  z-index: 1;
   transition: 0.5s;
 }
 
