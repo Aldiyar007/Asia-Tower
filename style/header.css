@@ -70,7 +70,7 @@ ul.header__list li a.active-page {
   background: #fff;
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: -5px;
   transform: scaleX(0);
   width: 100%;
 }
