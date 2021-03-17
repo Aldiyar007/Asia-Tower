@@ -45,7 +45,7 @@ li a.footer__link::before {
   display: flex;
   justify-content: center;
   position: relative;
-  left: 200%;
+  left: 150%;
   bottom: 15%;
 }
 

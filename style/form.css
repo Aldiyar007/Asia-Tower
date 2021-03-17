@@ -44,7 +44,7 @@
   transition: 0.5s;
 }
 .focus .label-text {
-  transform: translateY(-30px);
+  transform: translateY(-40px);
   font-size: 14px;
   color: #d33ebc;
 }
