@@ -5,7 +5,8 @@ a {
 .content {
 	position: relative;
 	top: 10px;
-	max-height: 80vh;
+	min-height: 84.2vh;
+	max-height: 84.2vh;
 }
 
 .connection {
