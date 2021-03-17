@@ -1,118 +1,65 @@
+.content {
+	min-height: 120vh;
+	background: rgb(14, 11, 173);
+}
+
 a {
 	text-decoration: none;
 	color: #fff;
 }
-
 .box-img {
-	font-family: "Cuprum", Arial, Helvetica, sans-serif;
-	width: 500px;
-	height: 300px;
-	border: 5px solid #b7bab7;
-	overflow: hidden;
-}
-
-.box-img img {
-	height: 300px;
-	width: 500px;
+	min-width: 600px;
+	max-width: 600px;
+	height: 400px;
+	position: relative;
+	right: 140px;
 }
 
 .dws-wrapper {
+	max-height: 400px;
+	min-width: 4000px;
+}
+
+.desc {
 	position: relative;
-	top: 160px;
-	display: flex;
-	align-items: center;
-	left: 8%;	
-	padding-top: 20px;
-	transform: translate(-50%, -50%);
-}
-
-.text {
-	position: absolute;
-	top: 20%;
-	color: #ffffff;
-	text-align: center;
-}
-
-a.bt {
-	position: absolute;
-	left: 160px;
-	top: 170px;
+	left: 460px;
+	max-width: 600px;
+	min-height: 400px;
+	bottom: 404px;
+	background: rgb(14, 11, 173);
 	color: #fff;
-	text-transform: uppercase;
-	padding: 10px 30px;
-	opacity: 0;
-	overflow: hidden;
-	transition: 0.2s ease-in-out;
-	background: #22b80e;
 }
 
-a.bt:before {
-	content: "";
-	position: absolute;
-	top: -8px;
-	left: -75px;
-	height: 50px;
-	width: 50px;
-	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.1),
-		rgba(255, 255, 255, 0.5)
-	);
-	transform: skewX(-45deg);
+.desc h1, h2, h3, h4, h5, h6, p {
+	padding: 15px;
 }
 
-a.bt:hover:before {
-	left: 150px;
-	transition: 0.5s ease-in-out;
+.list-menu li {
+	list-style: none;
+	padding: 0 15px 0 15px;
 }
 
-a.bt {
-	overflow: hidden;
+.list-menu li:first-child {
+	padding-top: 15px;
 }
 
-a.bt:active {
-	border: 2px solid #b3b3b3;
+.list-menu li:last-child {
+	padding-bottom: 15px;
 }
 
-.box-img img {
-	transition: 0.5s;
+.desc.left {
+	position: relative;
+	left: -140px;
+	margin-bottom: 0px;
+	margin-top: 4px;
+	min-width: 400px;
+	min-height: 400px;
+	color: #fff;
+	background: rgb(30, 29, 88);
 }
 
-.text {
-	z-index: 1;
-}
-
-.box-img:hover a.bt {
-	opacity: 1;
-	transition: 0.5s;
-}	
-
-@media (max-width: 510px) {
-	.content {
-		height: auto;
-	}
-
-	.dws-wrapper:first-child,
-	.dws-wrapper:last-child {
-		padding: 0;
-	}
-
-	.dws-wrapper:nth-child(2) {
-		margin-top: -40px;
-	}
-	
-	.dws-wrapper {
-		height: 200px;
-		width: 250px;
-		left: -200px;
-		padding-top: 320px;
-	}
-
-	a.bt {
-		opacity: 1;
-	}
-
-	footer {
-		margin-top: 140px;
-	}
+.box-img.left {
+	position: relative;
+	left: 460px;
+	display: flex;
 }
