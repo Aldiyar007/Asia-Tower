@@ -1,22 +1,30 @@
-body {
-	background: #310dd4;
-}
-
 .content {
-	min-height: 100vh;
+	min-height: 90vh;
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	background: #027b94;
 }
 
 .content a {
 	text-decoration: none;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	color: #fff;
 }
 
 .content a:hover {
 	color: red;
+}
+
+footer {
+	margin-top: 0;
+	position: relative;
+	top: 0;
 }
 
 h2 {
@@ -33,4 +41,116 @@ h2 {
 .content li::before {
 	content: "✓";
 	margin-right: 15px;
+}
+
+@media (max-width: 1536px) and (min-width: 1140px) { 
+	.text {
+		position: relative;
+		right: 400px;
+	}
+}
+
+@media (max-width: 1139px) and (min-width: 1085px) { 
+	.text {
+		position: relative;
+		right: 450px;
+	}
+}
+
+@media (max-width: 1084px) and (min-width: 901px) { 
+	.text {
+		position: relative;
+		right: 500px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 20px;
+		width: 800px;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 815px) { 
+	.text {
+		position: relative;
+		right: 590px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 20px;
+		width: 800px;
+	}
+}
+
+@media (max-width: 814px) and (min-width: 646px) { 
+	.text {
+		position: relative;
+		right: 610px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 16px;
+		width: 500px;
+	}
+}
+
+@media (max-width: 645px) and (min-width: 546px) { 
+	.text {
+		position: relative;
+		right: 720px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 16px;
+		width: 500px;
+	}
+}
+
+@media (max-width: 545px) and (min-width: 385px) { 
+	.text {
+		position: relative;
+		right: 780px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 12px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 384px) and (min-width: 315px) { 
+	.text {
+		position: relative;
+		right: 840px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 12px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 314px) and (min-width: 280px) { 
+	.text {
+		position: relative;
+		right: 860px;
+		top: 20px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 10px;
+		width: 200px;
+	}
 }

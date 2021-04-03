@@ -1,7 +1,6 @@
-$(document).ready(function () {
-    $('.header__burger').click(function (event) {
-        $('.header__burger,.header__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-        $('header').toggleClass('not-opacity');
-    });
-})
+document.querySelector('.header__burger').addEventListener("click", function (event) {
+    document.querySelector('.header__burger').classList.toggle('active');
+    document.querySelector('.header__menu').classList.toggle('active');
+    document.querySelector('body').classList.toggle('lock');
+    document.querySelector('header').classList.toggle('not-opacity');
+});

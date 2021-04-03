@@ -19,12 +19,14 @@
 </head>
 
 <body>
+
 	<div class="page">
+
 		<span id="header-first"></span>
 		<header class="header anim-items">
 			<div class="container">
 				<div class="header__body">
-					<a href="#header-first" id="smooth-scrolling" class="header__logo">
+					<a href="index.php" id="smooth-scrolling" class="header__logo">
 						<h1>Asia Tower</h1>
 					</a>
 					<div class="header__burger">
@@ -33,16 +35,12 @@
 					<nav class="header__menu">
 						<ul class="header__list">
 							<li>
-								<a href="" class="header__link active-page">Главная</a>
+								<a href="index.php" class="header__link">Главная</a>
 							</li>
 							<li>
-								<a href="square.html" class="header__link">СВОБОДНЫЕ ПОМЕЩЕНИЯ</a>
+								<a href="contact.php" class="header__link">Контакты</a>
 							</li>
-							<li>
-								<a href="contact.html" class="header__link">Контакты</a>
-							</li>
-							<li>
-								<a href="about.html" class="header__link">О нас</a>
+							<a href="about.php" class="header__link">О нас</a>
 							</li>
 						</ul>
 					</nav>
@@ -53,9 +51,9 @@
 		<div class="content content-index">
 			<div class="container">
 				<div class="title">
-					<img src="img/desc.jpeg" alt="">
+					<img src="img/desc.jpeg" class="bg" alt="">
 					<h1>
-						Самый престижный офис <br />
+						Самый престижный офис <br>
 						в центре Алматы
 					</h1>
 				</div>
@@ -105,40 +103,76 @@
 
 				<div class="slider-arrows"></div>
 
+				<h2 class="slider__title slider__title--two">Свободные помещения:</h2>
+				<div class="slider--two">
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+						<h3 class="slider-title">Паркинг</h3>
+						<div class="slider-desc">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus autem quod quas
+								dolorem eveniet asperiores placeat exercitationem, praesentium harum culpa molestias
+								provident repellendus totam ab! Deserunt perferendis similique numquam dolorem cum
+								explicabo inventore illo aspernatur consectetur voluptas ipsum</p>
+						</div>
+					</div>
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+					</div>
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+					</div>
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+					</div>
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+					</div>
+					<div class="slider__item slider__item--two">
+						<img src="img/header.jpg" alt="" />
+					</div>
+				</div>
+
+				<div class="slider-arrows--two"></div>
+
+				<a data-goto="#header-first" href="#" class="back-to-top"></a>
+
 				<wrapper>
 					<div class="dws-wrapper">
-						<input type="checkbox" name="toggle" id="dws-form" class="toggle-form" />
+						<input type="checkbox" name="toggle" id="dws-form" class="toggle-form" accesskey="x" />
 						<div class="dws-container">
 							<label for="dws-form" class="toggle-form"><i class="fa fa-question-circle"></i>Задать
 								вопрос</label>
-							<form class="form-box">
+							<form class="form-box" id="form">
 								<div class="input-box">
 									<label class="label-text">Ваше имя:</label>
-									<input class="user-input" type="text" name="name" required />
+									<input class="user-input req" type="text" name="user_name" id="name"
+										title="Имя может содержать только буквы." pattern="/[А-Я я-а-яЁе]/" />
 								</div>
 								<div class="input-box">
 									<label class="label-text">E-mail:</label>
-									<input class="user-input" type="email" name="email" required />
+									<input class="user-input req email" type="text" name="email" id="email" />
 								</div>
 								<div class="input-box">
 									<label class="label-text">Номер телефона:</label>
-									<input class="user-input" type="phone" name="phone" required pattern="\d+" />
+									<input class="user-input req" type="number" name="phone" id="phone" maxlength="11"
+										minlength="11" />
 								</div>
 								<div class="input-box">
 									<label class="label-text">Сообщение:</label>
-									<textarea class="user-input" type="message" name="message" required></textarea>
+									<textarea class="user-input req" type="message" name="message"
+										id="message"></textarea>
 								</div>
 								<div class="input-box">
-									<input type="checkbox" required />
-									<label class="personal-doc">Я согласен на обработку моих
-										<a href="#">персональных данных</a></label>
+									<label class="personal-doc">
+										<input type="checkbox" name="checkbox" id="checkbox" class="req" checked />
+										<p>Я согласен на обработку моих <a href="#">персональных данных</a></p>
+									</label>
 								</div>
+								<div id="error-message"></div>
 								<input type="submit" value="Отправить" class="button" />
 							</form>
 						</div>
-					</div>
 				</wrapper>
-				<a href="#" class="back-to-top"></a>
 			</div>
 		</div>
 
@@ -146,25 +180,24 @@
 			<nav class="footer">
 				<ul class="footer__list">
 					<li>
-						<a href="" class="footer__link">Главная</a>
+						<a href="index.php" class="footer__link">Главная</a>
 					</li>
 					<li>
-						<a href="square.html" class="footer__link">СВОБОДНЫЕ ПОМЕЩЕНИЯ</a>
+						<a href="contact.php" class="footer__link">Контакты</a>
 					</li>
 					<li>
-						<a href="contact.html" class="footer__link">Контакты</a>
-					</li>
-					<li>
-						<a href="about.html" class="footer__link">О нас</a>
+						<a href="about.php" class="footer__link">О нас</a>
 					</li>
 				</ul>
 				<a href="#" class="rules-info">Правила использования информации</a>
 				<a href="#" class="rules-info">Политика конфиденциальности</a>
 			</nav>
 		</footer>
+
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/slider.js"></script>
@@ -172,6 +205,7 @@
 	<script src="js/scroll-on-page.js"></script>
 	<script src="js/back-to-top.js"></script>
 	<script src="js/smooth-scrolling.js"></script>
+	<script src="js/mail.js"></script>
 </body>
 
 </html>

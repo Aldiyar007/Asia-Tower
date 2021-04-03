@@ -4,15 +4,16 @@
   bottom: 200px;
   width: 50px;
   height: 50px;
+  display: none;
   border-color: transparent;
   border-radius: 50%;
   background-color: #629460;
   z-index: 1;
-  transition: 0.5s;
 }
 
 .back-to-top:hover,
 .back-to-top:focus {
+  -webkit-filter: brightness(1.5);
   filter: brightness(1.5);
   outline: none;
 }
@@ -21,8 +22,14 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
   height: 100%;

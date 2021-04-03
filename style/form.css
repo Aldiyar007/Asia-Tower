@@ -3,17 +3,24 @@
   bottom: 0;
   right: 0%;
   z-index: 999;
-  transform: translateY(517px);
+  -webkit-transform: translateY(527px);
+  transform: translateY(527px); 
   width: 350px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .dws-container:hover {
-  transform: translateY(510px);
+  -webkit-transform: translateY(520px);
+  transform: translateY(520px); 
 }
+
 .toggle-form:checked ~ .dws-container {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0); 
 }
+
 .toggle-form {
   display: block;
   background: #8a36a5;
@@ -26,28 +33,43 @@
   border-radius: 8px 8px 0 0;
   width: 85%;
 }
+
 .form-box {
   padding: 30px;
   background: #fff;
   border: 4px solid #8a36a5;
 }
+
 .input-box {
   position: relative;
   margin: 0 0 20px;
   background: #fff;
 }
+
 .label-text {
   position: absolute;
   line-height: 55px;
   font-size: 15px;
   color: #a5a5a5;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.label-text::after {
+  content: "*";
+}
+
 .focus .label-text {
-  transform: translateY(-40px);
+  -webkit-transform: translateY(-36px);
+  transform: translateY(-36px);
   font-size: 14px;
   color: #d33ebc;
 }
+
+.focus .label-text::after {
+  content: '*';
+}
+
 .user-input {
   position: relative;
   background: transparent;
@@ -59,6 +81,61 @@
   border: none;
   border-bottom: 1px solid #a5a5a5;
 }
+
+.user-input.error {
+  border-bottom: 1px solid red;
+}
+
+#checkbox.error {
+  -webkit-box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px red;
+}
+
+.user-input._error {
+  border-bottom: 1px solid red;
+}
+
+#checkbox._error {
+  -webkit-box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px red;
+}
+
+body {
+  position: relative;
+}
+
+form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.9) url("../img/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+form._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+label input[type="checkbox"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+label p {
+  position: relative;
+  left: 20px;
+  bottom: 15px;
+}
+
 .button {
   background: #8a36a5;
   color: #fff;
@@ -69,8 +146,10 @@
   margin-top: 10px;
   margin-left: 50%;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .button:hover {
   background: #b33edc;
 }
@@ -82,24 +161,33 @@
   font-size: 40px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 .toggle-form[type="checkbox"] {
   display: none;
 }
 
 textarea.user-input {
-  height: 100px;
+  resize: vertical;
+  min-height: 100px;
   margin-top: 12px;
+  max-height: 300px;
 }
 
 .personal-doc,
 .personal-doc a {
   color: #858585;
+  -webkit-transition: 0.9s;
   transition: 0.9s;
 }
 
 .personal-doc a:hover {
   text-decoration: none;
   color: #b33edc;
+  -webkit-transform: translateX(15px);
   transform: translateX(15px);
 }
 
@@ -107,23 +195,21 @@ textarea.user-input {
   .toggle-form {
     font-size: 15px;
   }
-
   .toggle-form i {
     position: absolute;
     top: 7px;
     left: 40px;
     font-size: 26px;
   }
-
   .dws-container {
     width: 250px;
-    transform: translateY(490px);
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
   }
-
   .toggle-form:checked ~ .dws-container {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   .button {
     margin-left: 20%;
     width: 100px;
@@ -131,8 +217,7 @@ textarea.user-input {
     bottom: 10px;
     left: 25px;
   }
-
   .form-box {
-    height: 490px;
+    height: 500px;
   }
 }
