@@ -311,6 +311,8 @@ header.not-opacity {
 }
 .arenda__block {
   display: flex;
+  margin-right: 0;
+  margin-left: 0;
   margin-top: 120px;
   padding-bottom: 80px;
   align-items: center;
@@ -322,12 +324,6 @@ header.not-opacity {
 }
 .arenda__img {
   max-width: 230px;
-}
-
-@media (max-width: 1560px) {  
-  .arenda__block {
-    flex-direction: column;
-  }
 }
 
 /* Form */
@@ -681,6 +677,11 @@ p.rules a {
 @media (max-width: 2000px) {  
   .desc__text {
     font-size: calc(11px + (20 - 11) * ((100vw - 280px) / (1280 - 280)));
+  }
+}
+@media (max-width: 1560px) {  
+  .arenda__block {
+    flex-direction: column;
   }
 }
 @media (min-width: 1030px) {  
