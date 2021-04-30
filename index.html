@@ -2,210 +2,336 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="description" content="бизнес центр Asia Tower" />
-	<meta name="keywords" content="бизнес центр, Asia Tower" />
-	<meta name="Address" content="г. Алматы, пр. Аль-Фараби, дом 17/1, ПФЦ «Нурлы-Тау» блок 5Б, 10 этаж, офис №16" />
-	<title>Asia Tower | Главная</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/header.jpg">
-	<link rel="stylesheet" href="style/back-to-top.css" />
-	<link rel="stylesheet" href="style/form.css" />
-	<link rel="stylesheet" href="style/main.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta http-equiv="Content-Type" content="type; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="бизнес центр Asia Tower" />
+    <meta name="keywords" content="бизнес центр, Asia Tower" />
+    <meta name="Address" content="г. Алматы, пр. Аль-Фараби, дом 17/1, ПФЦ «Нурлы-Тау» блок 5Б, 10 этаж, офис №16" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Asia Tower | Главная</title>
 </head>
 
 <body>
 
-	<div class="page">
+    <!-- Wrapper -->
+    <div class="wrapper">
 
-		<span id="header-first"></span>
-		<header class="header anim-items">
-			<div class="container">
-				<div class="header__body">
-					<a href="index.html" id="smooth-scrolling" class="header__logo">
-						<h1>Asia Tower</h1>
-					</a>
-					<div class="header__burger">
-						<span></span>
-					</div>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li>
-								<a href="index.html" class="header__link active">Главная</a>
-							</li>
-							<li>
-								<a href="contact.html" class="header__link">Контакты</a>
-							</li>
-							<a href="about.html" class="header__link">О нас</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" id="smooth-scrolling" class="header__logo">
+                        <h1>Asia Tower</h1>
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li data-scroll="#main">
+                                <a href="#" class="header__link header__link_1">Главная</a>
+                            </li>
+                            <li data-scroll="#arenda">
+                                <a href="#" class="header__link header__link_2">Арендаторы</a>
+                            </li>
+                            <li data-scroll="#about">
+                                <a href="#" class="header__link header__link_3">О нас</a>
+                            </li>
+                            <li data-scroll="#contact">
+                                <a href="#" class="header__link header__link_4">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- /.container -->
+        </header> <!-- /.header -->
 
-		<div class="content content-index">
-			<div class="container">
-				<div class="title">
-					<img src="img/desc.jpeg" class="bg" alt="">
-					<h1>
-						Самый престижный офис <br>
-						в центре Алматы
-					</h1>
-				</div>
-				<div class="description" id="description">
-					<h2>
-						Бизнес центр ПФЦ "Нурлы Тау" Блок 5 Б "Asia Tower" - лучший бизнес
-						центр Алматы. "Asia Tower" сочетает в себе современный дизайн с
-						самыми высокими стандартами качества, надежности и безопасности.
-					</h2>
-				</div>
-				<div class="info">
-					<div class="info-block">
-						<a href="about.html" class="info-block__title">О бизнес центре</a>
-						<div class="info-block__img">
-							<a href="about.html"><img src="img/info1.jpeg" alt="о нас" /></a>
-						</div>
-					</div>
-					<div class="info-block info-block-right">
-						<a href="square.html" class="info-block__title">Свободные офисы</a>
-						<div class="info-block__img">
-							<a href="square.html"><img src="img/info2.jpeg" alt="свободные офисы" /></a>
-						</div>
-					</div>
-				</div>
+        <!-- Content -->
+        <main class="content">
 
-				<h2 class="slider__title">Арендаторы:</h2>
-				<div class="slider">
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item">
-						<img src="img/header.jpg" alt="" />
-					</div>
-				</div>
+            <div class="main block" id="main">
+                <div class="intro">
+                    <div class="intro__body">
+                        <div class="intro__title">сАМЫЙ ПРЕСТИЖНЫЙ ОФИС <br>В ЦЕНТРЕ АЛМАТЫ</div>
+                    </div>
+                    <!-- <video autoplay muted loop preload="auto" alt="intro" class="intro__img">
+                    <source src="img/intro/intro.webm">
+                    <source src="img/intro/intro.mp4">
+                </video> -->
+                    <img src="img/intro/intro2.jpeg" alt="intro" class="intro__img">
+                </div> <!-- /.intro -->
 
-				<div class="slider-arrows"></div>
+                <!-- Description -->
+                <div class="desc">
+                    <div class="container">
 
-				<h2 class="slider__title slider__title--two">Свободные помещения:</h2>
-				<div class="slider--two">
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-						<h3 class="slider-title">Паркинг</h3>
-						<div class="slider-desc">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus autem quod quas
-								dolorem eveniet asperiores placeat exercitationem, praesentium harum culpa molestias
-								provident repellendus totam ab! Deserunt perferendis similique numquam dolorem cum
-								explicabo inventore illo aspernatur consectetur voluptas ipsum</p>
-						</div>
-					</div>
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-					</div>
-					<div class="slider__item slider__item--two">
-						<img src="img/header.jpg" alt="" />
-					</div>
-				</div>
+                        <div class="desc__body">
+                            <div class="desc__text">
+                                Бизнес центр ПФЦ "Нурлы Тау" Блок 5 Б "Asia Tower" - лучший бизнес центр Алматы. "Asia
+                                Tower" сочетает в себе современный дизайн с самыми высокими стандартами качества,
+                                надежности
+                                и безопасности.
+                            </div>
+                        </div>
 
-				<div class="slider-arrows--two"></div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.description -->
 
-				<a data-goto="#header-first" href="#" class="back-to-top"></a>
+                <!-- Info -->
+                <div class="info">
+                    <div class="container">
 
-				<wrapper>
-					<div class="dws-wrapper">
-						<input type="checkbox" name="toggle" id="dws-form" class="toggle-form" accesskey="x" />
-						<div class="dws-container">
-							<label for="dws-form" class="toggle-form"><i class="fa fa-question-circle"></i>Задать
-								вопрос</label>
-							<form class="form-box" id="form">
-								<div class="input-box">
-									<label class="label-text">Ваше имя:</label>
-									<input class="user-input req" type="text" name="user_name" id="name"
-										title="Имя может содержать только буквы." pattern="/[А-Я я-а-яЁе]/" />
-								</div>
-								<div class="input-box">
-									<label class="label-text">E-mail:</label>
-									<input class="user-input req email" type="text" name="email" id="email" />
-								</div>
-								<div class="input-box">
-									<label class="label-text">Номер телефона:</label>
-									<input class="user-input req" type="number" name="phone" id="phone" maxlength="11"
-										minlength="11" />
-								</div>
-								<div class="input-box">
-									<label class="label-text">Сообщение:</label>
-									<textarea class="user-input req" type="message" name="message"
-										id="message"></textarea>
-								</div>
-								<div class="input-box">
-									<label class="personal-doc">
-										<input type="checkbox" name="checkbox" id="checkbox" class="req" checked />
-										<p>Я согласен на обработку моих <a href="#">персональных данных</a></p>
-									</label>
-								</div>
-								<div id="error-message"></div>
-								<input type="submit" value="Отправить" class="button" />
-							</form>
-						</div>
-				</wrapper>
-			</div>
-		</div>
+                        <div class="info__inner">
+                            <div class="info__body">
+                                <div class="info__item">
+                                    <div class="info__title"><a href="about.html" class="red">О бизнес центре</a></div>
+                                    <a href="about.html "><img src="img/info1.jpeg" alt="About"
+                                            class="info__img zoom-hover"></a>
+                                </div>
+                            </div>
+                        </div>
 
-		<footer>
-			<nav class="footer">
-				<ul class="footer__list">
-					<li>
-						<a href="index.html" class="footer__link">Главная</a>
-					</li>
-					<li>
-						<a href="contact.html" class="footer__link">Контакты</a>
-					</li>
-					<li>
-						<a href="about.html" class="footer__link">О нас</a>
-					</li>
-				</ul>
-				<a href="#" class="rules-info">Правила использования информации</a>
-				<a href="#" class="rules-info">Политика конфиденциальности</a>
-			</nav>
-		</footer>
+                    </div> <!-- /.container -->
+                </div> <!-- /.info -->
 
-	</div>
+                <a href="#" class="back-to-top"></a>
 
-	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/form.js"></script>
-	<script src="js/slider.js"></script>
-	<script src="js/burger.js"></script>
-	<script src="js/scroll-on-page.js"></script>
-	<script src="js/back-to-top.js"></script>
-	<script src="js/smooth-scrolling.js"></script>
-	<script src="js/mail.js"></script>
+                <div>
+                    <!-- Form -->
+                    <div class="dws-wrapper">
+                        <input type="checkbox" name="toggle" id="dws-form" class="toggle-form" />
+                        <div class="dws-container">
+                            <label for="dws-form" class="toggle-form"><i class="fa fa-question-circle"></i>Задать
+                                вопрос</label>
+                            <form class="form-box" id="form">
+                                <div class="input-box">
+                                    <label class="label-text">Ваше имя:</label>
+                                    <input class="user-input req" type="text" name="user_name" id="name" />
+                                </div>
+                                <div class="input-box">
+                                    <label class="label-text">E-mail:</label>
+                                    <input class="user-input req email" type="text" name="email" id="email" />
+                                </div>
+                                <div class="input-box">
+                                    <label class="label-text">Номер телефона:</label>
+                                    <input class="user-input req" type="number" name="phone" id="phone" />
+                                </div>
+                                <div class="input-box">
+                                    <label class="label-text">Сообщение:</label>
+                                    <textarea class="user-input req" name="message" id="message"></textarea>
+                                </div>
+                                <div class="input-box">
+                                    <label class="personal-doc">
+                                        <input type="checkbox" name="checkbox" id="checkbox" class="req" checked />
+                                        <span>Я согласен на обработку моих <a href="#">персональных данных</a>*</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div> <!-- /.form -->
+
+                <!--<h2 class="slider__title">Арендаторы:</h2>
+                <div class="text__loading">У вас слабый интернет, слайдер загружается</div>
+
+                <div class="slider" id="arenda">
+                    <div class="slider__item">
+                        <img src="img/slider/slider__item/slider1.jpeg" class="zoom-hover" alt="Арендаторы">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/slider__item/slider2.jpeg" class="zoom-hover" alt="Арендаторы">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/slider__item/slider3.jpeg" class="zoom-hover" alt="Арендаторы">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/slider/slider__item/slider4.jpeg" class="zoom-hover" alt="Арендаторы">
+                    </div>
+                </div>  /.slider -->
+            </div> <!-- main -->
+
+            <!-- arenda -->
+            <div class="arenda block" id="arenda">
+                <div class="container">
+                    <div class="arenda__text">
+                        <p>
+                            Бизнес-центр Azia Tower выбирают самые крупные иностранные и казахстанские компании.
+                            <br>
+                            Зарубежные компании:
+                            <br>
+                            Казахстанские компании:
+                        </p>
+                    </div>
+                    <div class="arenda__block">
+                        <div class="arenda__item">
+                            <img src="img/arenda/arenda1.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
+                        </div>
+                        <div class="arenda__item">
+                            <img src="img/arenda/arenda2.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
+                        </div>
+                        <div class="arenda__item">
+                            <img src="img/arenda/arenda3.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
+                        </div>
+                        <div class="arenda__item">
+                            <img src="img/arenda/arenda4.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.arenda -->
+
+            <div class="about block" id="about">
+                <!-- About -->
+                <div class="about-bg">
+                    <div class="container" id="about">
+                        <!-- About -->
+                        <div class="text">
+                            <h2 class="about">Бизнес-центр «Asia Tower» находится по адресу: <a
+                                    href="https://yandex.kz/maps/162/almaty/house/Y08YfwNlT0cAQFppfX5ycXxiYw==/?ll=76.946180%2C43.229633&z=18.2"
+                                    target="_blank" class="about red">г. Алматы, пр. Аль-Фараби, дом 17/1</a>, в
+                                деловом
+                                центре
+                                города Алматы.
+                            </h2>
+                            <h2 class="about">Это 30-ти этажное административное здание, построенное с учетом
+                                современных
+                                требований к
+                                Бизнес-центру, и
+                                соответствует высокому стандарту качества класса “А”.</h2>
+                            <h2 class="about"> Бизнес центр "Asia-Tower" лидер среди бизнес-центров своего класса.
+                            </h2>
+                            <h2 class="about">В здании Бизнес-центра «Asia Tower» в настоящее время размещается
+                                порядка
+                                50
+                                компаний, включая
+                                филиалы
+                                крупнейших Казахстанских и иностранных компаний. <br> </h2>
+                            <h2 class="about"> Для удобства партнеров и клиентов Бизнес-центра предусмотрены и
+                                функционируют:
+                                <ul>
+                                    <li class="about">Подземная парковка</li>
+                                    <li class="about">Гостевой паркинг</li>
+                                    <li class="about">Кафе «Costa Coffee»</li>
+                                </ul>
+                            </h2>
+                            <h2 class="about"> В здании выполнена высококачественная отделка помещений общего
+                                пользования,
+                                соответствующего
+                                принятым
+                                стандартам, так же здание оборудовано современной системой приточно-вытяжной
+                                вентиляции,
+                                восемью
+                                скоростными
+                                лифтами SIGMA. </h2>
+                            <h2 class="about">Эксплуатацией и обеспечением бесперебойного функционирования систем
+                                жизнеобеспечения
+                                Бизнес-центра
+                                занимается
+                                Управляющая компания "Меридиан Капитал", круглосуточно осуществляющая контроль за
+                                работой
+                                всех
+                                инженерных
+                                систем. </h2>
+                            <h2 class="about">Комплекс охранных мероприятий возложен на службу безопасности, имеющую
+                                опыт и
+                                необходимые
+                                лицензии. Также
+                                предусмотрены круглосуточная охрана, видеомониторинг здания, прилегающего периметра
+                                и
+                                подземной
+                                парковки.
+                                Арендаторы Бизнес-Центра «Asia Tower» имеют в своем распоряжении полный спектр
+                                телекоммуникационных услуг.
+                            </h2>
+                        </div> <!-- /.text -->
+                    </div> <!-- /.container -->
+                </div>
+            </div> <!-- /.about -->
+
+            <div class="contact block" id="contact">
+                <!-- Contact -->
+                <div class="contact__content">
+                    <div class="contact__container">
+                        <div class="contact__body">
+                            <div class="contact__item">
+                                <h3 class="contact__title">Адрес:</h3>
+                                <div class="contact__text">
+                                    <address>г. Алматы, пр. Аль-Фараби, дом 17/1, ПФЦ «Нурлы-Тау» блок 5Б, 22 этаж,
+                                        офис
+                                        №15
+                                    </address>
+                                    <p><a href="tel:+77272222020">+7 (727) 222 20 20</a></p>
+                                    <p><a href="mailto:info@asiatower.kz">info@asiatower.kz</a></p>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <h3 class="contact__title">Отдел клиентского обслуживания:</h3>
+                                <h3 class="contact__title">(По вопросам аренды офисов)</h3>
+                                <div class="contact__text">
+                                    <p>Назарханулы Марат</p>
+                                    <p><a href="tel:+77011114672">+7 (701) 111 46 72</a></p>
+                                    <p><a href="mailto:info@asiatower.kz">oko@asiatower.kz</a></p>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <h3 class="contact__title">Технический отдел:</h3>
+                                <div class="contact__text">
+                                    <p>Куцев Александр</p>
+                                    <p><a href="tel:+77273559960">+7 (727) 355 99 60</a></p>
+                                    <p><a href="mailto:tehdir@asiatower.kz">tehdir@asiatower.kz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div>
+                <div class="map">
+                    <a href="https://yandex.ru/maps/?um=constructor%3Aadab8cfaf9145afaf01fb14307e439bbd493f860ad8c3bc6cf0a922fc76558b6&amp;source=constructorStatic"
+                        target="_blank"><img
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aadab8cfaf9145afaf01fb14307e439bbd493f860ad8c3bc6cf0a922fc76558b6&amp;width=555&amp;height=450&amp;lang=ru_RU"
+                            alt="карта" class="zoom-hover" /></a>
+                </div>
+
+            </div> <!-- /.contact -->
+        </main> <!-- /.content -->
+
+        <footer>
+            <div class="footer__body">
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="index.html" class="footer__link red">Главная</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="footer__link red">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer__link red">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__rules">
+                    <a href="rules.html" class="red">Правила использования информации</a>
+                    <a href="privacy-policy.html" class="red">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- /.wrapper -->
+
+    <!-- Scripts -->
+    <script src="js/active.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
