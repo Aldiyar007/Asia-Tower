@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Asia Tower | Главная</title>
 </head>
 
@@ -25,10 +24,10 @@
     <div class="wrapper">
 
         <!-- Header -->
-        <header class="header">
+        <header id="header" class="header lock-padding">
             <div class="container">
                 <div class="header__body">
-                    <a href="#" id="smooth-scrolling" class="header__logo">
+                    <a href="#" class="header__logo">
                         <h1>Asia Tower</h1>
                     </a>
                     <div class="header__burger">
@@ -36,24 +35,25 @@
                     </div>
                     <nav class="header__menu">
                         <ul class="header__list">
-                            <li data-scroll="#main">
-                                <a href="#" class="header__link header__link_1">Главная</a>
+                            <li>
+                                <a href="#" data-goto="#main"
+                                    class="link header__link header__link_1 active-page">Главная</a>
                             </li>
-                            <li data-scroll="#arenda">
-                                <a href="#" class="header__link header__link_2">Арендаторы</a>
+                            <li>
+                                <a href="#" data-goto="#advantages"
+                                    class="link header__link header__link_2">Преимущества</a>
                             </li>
-                            <li data-scroll="#about">
-                                <a href="#" class="header__link header__link_3">О нас</a>
+                            <li>
+                                <a href="#" data-goto="#about" class="link header__link header__link_3">О нас</a>
                             </li>
-                            <li data-scroll="#contact">
-                                <a href="#" class="header__link header__link_4">Контакты</a>
+                            <li>
+                                <a href="#" data-goto="#contact" class="link header__link header__link_4">Контакты</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div> <!-- /.container -->
         </header> <!-- /.header -->
-
         <!-- Content -->
         <main class="content">
 
@@ -85,127 +85,86 @@
                     </div> <!-- /.container -->
                 </div> <!-- /.description -->
 
-                <!-- Info -->
-                <div class="info">
-                    <div class="container">
+                <a href="#main" class="back-to-top smooth"></a>
+            </div> <!-- /.main -->
 
-                        <div class="info__inner">
-                            <div class="info__body">
-                                <div class="info__item">
-                                    <div class="info__title"><a href="about.html" class="red">О бизнес центре</a></div>
-                                    <a href="about.html "><img src="img/info1.jpeg" alt="About"
-                                            class="info__img zoom-hover"></a>
-                                </div>
+            <!-- Advantages -->
+            <div class="advantages block" id="advantages">
+                <div class="advantages-bg">
+                    <div class="advantages__title">ПРЕИМУЩЕСТВА БИЗНЕС-ЦЕНТРА «ASIA TOWER»</div>
+                    <div class="advantages__items">
+                        <div class="advantages__block">
+                            <div class="advantages__item">
+                                <div class="item__title">ПАРКИНГ</div>
+                                <div class="item__text">Для Вашего удобства в аренду имеются места в подземном
+                                    паркинге,
+                                    а также гостевой паркинг</div>
+                                <span class="item__icon">
+                                    <img src="img/advantages/icon-1.png">
+                                </span>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="item__title">СЕРВИС</div>
+                                <div class="item__text">Собственная обслуживающая компания следит за идеальным
+                                    состоянием и
+                                    чистотой всего Задания </div>
+                                <span class="item__icon">
+                                    <img src="img/advantages/icon-3.png">
+                                </span>
                             </div>
                         </div>
-
-                    </div> <!-- /.container -->
-                </div> <!-- /.info -->
-
-                <a href="#" class="back-to-top"></a>
-
-                <div>
-                    <!-- Form -->
-                    <div class="dws-wrapper">
-                        <input type="checkbox" name="toggle" id="dws-form" class="toggle-form" />
-                        <div class="dws-container">
-                            <label for="dws-form" class="toggle-form"><i class="fa fa-question-circle"></i>Задать
-                                вопрос</label>
-                            <form class="form-box" id="form">
-                                <div class="input-box">
-                                    <label class="label-text">Ваше имя:</label>
-                                    <input class="user-input req" type="text" name="user_name" id="name" />
-                                </div>
-                                <div class="input-box">
-                                    <label class="label-text">E-mail:</label>
-                                    <input class="user-input req email" type="text" name="email" id="email" />
-                                </div>
-                                <div class="input-box">
-                                    <label class="label-text">Номер телефона:</label>
-                                    <input class="user-input req" type="number" name="phone" id="phone" />
-                                </div>
-                                <div class="input-box">
-                                    <label class="label-text">Сообщение:</label>
-                                    <textarea class="user-input req" name="message" id="message"></textarea>
-                                </div>
-                                <div class="input-box">
-                                    <label class="personal-doc">
-                                        <input type="checkbox" name="checkbox" id="checkbox" class="req" checked />
-                                        <span>Я согласен на обработку моих <a href="#">персональных данных</a>*</span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="button">Отправить</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div> <!-- /.form -->
-            </div> <!-- main -->
-
-            <!-- arenda -->
-            <div class="arenda block" id="arenda">
-                <div class="container">
-                    <div class="arenda__text">
-                        <p>
-                            Бизнес-центр Azia Tower выбирают самые крупные иностранные и казахстанские компании.
-                            <br>
-                            Зарубежные компании:
-                            <br>
-                            Казахстанские компании:
-                        </p>
-                    </div>
-                    <div class="arenda__block">
-                        <div class="arenda__item">
-                            <img src="img/arenda/arenda1.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
-                        </div>
-                        <div class="arenda__item">
-                            <img src="img/arenda/arenda2.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
-                        </div>
-                        <div class="arenda__item">
-                            <img src="img/arenda/arenda3.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
-                        </div>
-                        <div class="arenda__item">
-                            <img src="img/arenda/arenda4.jpeg" alt="фото арендатора" class="arenda__img zoom-hover">
+                        <div class="advantages__block">
+                            <div class="advantages__item">
+                                <div class="item__title">ИНФРАСТРУКТУРА </div>
+                                <div class="item__text">В шаговой доступность на территории Бизнес-центра расположены:
+                                    кафе,
+                                    магазины, банки, автомойка</div>
+                                <span class="item__icon">
+                                    <img src="img/advantages/icon-2.png">
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> <!-- /.arenda -->
+            </div>
 
+            <!-- About -->
             <div class="about block" id="about">
-                <!-- About -->
                 <div class="about-bg">
-                    <div class="container" id="about">
+                    <div class="container">
+                        <div class="about__title">О бизнес центре</div>
                         <!-- About -->
-                        <div class="text">
-                            <h2 class="about">Бизнес-центр «Asia Tower» находится по адресу: <a
+                        <div class="about__text">
+                            <div class="about__block">Бизнес-центр «Asia Tower» находится по адресу: <a
                                     href="https://yandex.kz/maps/162/almaty/house/Y08YfwNlT0cAQFppfX5ycXxiYw==/?ll=76.946180%2C43.229633&z=18.2"
-                                    target="_blank" class="about red">г. Алматы, пр. Аль-Фараби, дом 17/1</a>, в
+                                    target="_blank" class="about__link red">г. Алматы, пр. Аль-Фараби, дом 17/1</a>, в
                                 деловом
                                 центре
                                 города Алматы.
-                            </h2>
-                            <h2 class="about">Это 30-ти этажное административное здание, построенное с учетом
+                            </div>
+                            <div class="about__block">Это 30-ти этажное административное здание, построенное с учетом
                                 современных
                                 требований к
                                 Бизнес-центру, и
-                                соответствует высокому стандарту качества класса “А”.</h2>
-                            <h2 class="about"> Бизнес центр "Asia-Tower" лидер среди бизнес-центров своего класса.
-                            </h2>
-                            <h2 class="about">В здании Бизнес-центра «Asia Tower» в настоящее время размещается
+                                соответствует высокому стандарту качества класса “А”.</div>
+                            <div class="about__block"> Бизнес центр "Asia-Tower" лидер среди бизнес-центров своего
+                                класса.
+                            </div>
+                            <div class="about__block">В здании Бизнес-центра «Asia Tower» в настоящее время размещается
                                 порядка
                                 50
                                 компаний, включая
                                 филиалы
-                                крупнейших Казахстанских и иностранных компаний. <br> </h2>
-                            <h2 class="about"> Для удобства партнеров и клиентов Бизнес-центра предусмотрены и
+                                крупнейших Казахстанских и иностранных компаний. <br> </div>
+                            <div class="about__block"> Для удобства партнеров и клиентов Бизнес-центра предусмотрены и
                                 функционируют:
                                 <ul>
-                                    <li class="about">Подземная парковка</li>
-                                    <li class="about">Гостевой паркинг</li>
-                                    <li class="about">Кафе «Costa Coffee»</li>
+                                    <li class="about__list">Подземная парковка</li>
+                                    <li class="about__list">Гостевой паркинг</li>
+                                    <li class="about__list">Кафе «Costa Coffee»</li>
                                 </ul>
-                            </h2>
-                            <h2 class="about"> В здании выполнена высококачественная отделка помещений общего
+                            </div>
+                            <div class="about__block"> В здании выполнена высококачественная отделка помещений общего
                                 пользования,
                                 соответствующего
                                 принятым
@@ -213,8 +172,9 @@
                                 вентиляции,
                                 восемью
                                 скоростными
-                                лифтами SIGMA. </h2>
-                            <h2 class="about">Эксплуатацией и обеспечением бесперебойного функционирования систем
+                                лифтами SIGMA. </div>
+                            <div class="about__block">Эксплуатацией и обеспечением бесперебойного функционирования
+                                систем
                                 жизнеобеспечения
                                 Бизнес-центра
                                 занимается
@@ -222,8 +182,9 @@
                                 работой
                                 всех
                                 инженерных
-                                систем. </h2>
-                            <h2 class="about">Комплекс охранных мероприятий возложен на службу безопасности, имеющую
+                                систем. </div>
+                            <div class="about__block">Комплекс охранных мероприятий возложен на службу безопасности,
+                                имеющую
                                 опыт и
                                 необходимые
                                 лицензии. Также
@@ -233,14 +194,14 @@
                                 парковки.
                                 Арендаторы Бизнес-Центра «Asia Tower» имеют в своем распоряжении полный спектр
                                 телекоммуникационных услуг.
-                            </h2>
+                            </div>
                         </div> <!-- /.text -->
                     </div> <!-- /.container -->
                 </div>
             </div> <!-- /.about -->
 
+            <!-- Contact -->
             <div class="contact block" id="contact">
-                <!-- Contact -->
                 <div class="contact__content">
                     <div class="contact__container">
                         <div class="contact__body">
@@ -260,7 +221,7 @@
                                 <h3 class="contact__title">(По вопросам аренды офисов)</h3>
                                 <div class="contact__text">
                                     <p>Назарханулы Марат</p>
-                                    <p><a href="tel:+77011114672">+7 (701) 111 46 72</a></p>
+                                    <p><a href="tel:+77273559960">+7 (727) 355 99 60</a></p>
                                     <p><a href="mailto:info@asiatower.kz">oko@asiatower.kz</a></p>
                                 </div>
                             </div>
@@ -279,24 +240,77 @@
                     <a href="https://yandex.ru/maps/?um=constructor%3Aadab8cfaf9145afaf01fb14307e439bbd493f860ad8c3bc6cf0a922fc76558b6&amp;source=constructorStatic"
                         target="_blank"><img
                             src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aadab8cfaf9145afaf01fb14307e439bbd493f860ad8c3bc6cf0a922fc76558b6&amp;width=555&amp;height=450&amp;lang=ru_RU"
-                            alt="карта" class="zoom-hover" /></a>
+                            alt="карта" class="zoom-hover"></a>
+                </div>
+            </div> <!-- /.contact -->
+
+            <!-- Form -->
+            <div>
+                <div class="dws-wrapper">
+                    <input type="checkbox" name="toggle" id="dws-form" class="toggle-form" />
+                    <div class="dws-container lock-padding">
+                        <label for="dws-form" class="toggle-form"><span class="toggle-form-question">?</span>Задать
+                            вопрос</label>
+                        <form class="form-box form form-dws" id="form">
+                            <div class="input-box">
+                                <select name="choice">
+                                    <option>Вынос вещей</option>
+                                    <option>Гостевой паркинг</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <label class="label-form label-text">Наименование компании:</label>
+                                <input class="user-input input-req" type="text" onfocus="Focus(this)"
+                                    onblur="Blur(this)" name="user_name" id="name" />
+                            </div>
+                            <div class="input-box">
+                                <label class="label-form label-text">Контактный телефон:</label>
+                                <input class="user-input input-req phone" name="phone" onfocus="Focus(this)"
+                                    onblur="Blur(this)" id="phone" />
+                            </div>
+                            <div class="input-box">
+                                <label class="label-form label-text">E-mail:</label>
+                                <input class="user-input input-req email" type="text" onfocus="Focus(this)"
+                                    onblur="Blur(this)" name="email" id="email" />
+                            </div>
+                            <div class="input-box">
+                                <label class="label-form label-text">Сообщение:</label>
+                                <textarea class="user-input input-req" name="message" onfocus="Focus(this)"
+                                    onblur="Blur(this)" id="message"></textarea>
+                            </div>
+                            <div class="input-box">
+                                <label class="label-form personal-doc">
+                                    <input type="checkbox" name="checkbox" id="checkbox-form" class="user-req"
+                                        checked />
+                                    <span>Я согласен на обработку моих <a href="privacy-policy.html">персональных
+                                            данных</a>*</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="form-button">Отправить</button>
+                        </form>
+                    </div>
                 </div>
 
-            </div> <!-- /.contact -->
+            </div> <!-- /.form -->
+
         </main> <!-- /.content -->
 
-        <footer>
+        <!-- Footer -->
+        <footer class="footer">
             <div class="footer__body">
                 <nav class="footer__menu">
                     <ul class="footer__list">
                         <li>
-                            <a href="index.html" class="footer__link red">Главная</a>
+                            <a href="#" data-goto="#main" class="link footer__link red">Главная</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="footer__link red">Контакты</a>
+                            <a href="#" data-goto="#advantages" class="link footer__link red">Преимущества</a>
                         </li>
                         <li>
-                            <a href="about.html" class="footer__link red">О нас</a>
+                            <a href="#" data-goto="#about" class="link footer__link red">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#" data-goto="#contact" class="link footer__link red">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -305,14 +319,10 @@
                     <a href="privacy-policy.html" class="red">Политика конфиденциальности</a>
                 </div>
             </div>
-        </footer>
+        </footer> <!-- /.footer -->
     </div> <!-- /.wrapper -->
 
     <!-- Scripts -->
-    <script src="js/active.js"></script>
-    <script src="js/app2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

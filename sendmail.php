@@ -11,7 +11,7 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->isHTML(true);
 
-$mail->setFrom('samaldiar@gmail.com', 'Алдияр');
+$mail->setFrom('info@asiatower.kz', 'Алдияр');
 $mail->addAddress('samaldiar@gmail.com');
 $mail->subject = "Новое сообщение с сайта";
 
